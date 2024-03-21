@@ -3,6 +3,7 @@ ARG BASE_UBI_IMAGE_TAG=9.3-1552
 ARG PROTOC_VERSION=25.2
 ARG PYTORCH_INDEX="https://download.pytorch.org/whl"
 # ARG PYTORCH_INDEX="https://download.pytorch.org/whl/nightly"
+ARG test
 
 # match PyTorch version that was used to compile flash-attention v2 pre-built wheels
 # e.g. flash-attn v2.5.2 => torch ['1.12.1', '1.13.1', '2.0.1', '2.1.2', '2.2.0', '2.3.0.dev20240126']
