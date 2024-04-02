@@ -144,8 +144,8 @@ def prepare_inputs_with_speculation(
     n_adds = speculator.n_predict + 1
 
     #hard-code some values
-    top_k = 5
-    threshes=[5, 3, 2]
+    top_k = speculator.config.n_candidates
+    threshes= speculator.config.top_k_tokens_per_head
     flatting=True
 
     # create candidate sequences
